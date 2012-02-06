@@ -2,16 +2,15 @@
 
 define(EDIR_ADMIN_EMAIL, "fel_simas@hotmail.com");
 
-$envjson = json_decode(file_get_contents("/home/dotcloud/environment.json"),true);
 
 # ----------------------------------------------------------------------------------------------------
 # DATABASE CONNECTION PARAMETERS
 # ----------------------------------------------------------------------------------------------------
 define(DEFAULT_DB, "DIRECTORYDB");
-define(_DIRECTORYDB_HOST, $envjson['DOTCLOUD_DB_MYSQL_HOST']);
-define(_DIRECTORYDB_USER, "root");
-define(_DIRECTORYDB_PASS, "1AR0qzgNYwS8sEBpgDW4");
-define(_DIRECTORYDB_NAME, "tudoporaqui");
+define(_DIRECTORYDB_HOST, "a.db.shared.orchestra.io");
+define(_DIRECTORYDB_USER, "user_48dda2e4");
+define(_DIRECTORYDB_PASS, "xgD;M2O%E6&^m-");
+define(_DIRECTORYDB_NAME, "db_48dda2e4");
 define(_DIRECTORYDB_EMAIL, EDIR_ADMIN_EMAIL);
 if (DEMO_DEV_MODE || !$_SERVER["HTTP_HOST"]) {
 define(_DIRECTORYDB_DEBUG, "display");
