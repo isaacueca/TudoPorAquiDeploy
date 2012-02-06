@@ -1,0 +1,25 @@
+3
+1,2,3,5,6,11,21,25,27
+French Fries
+Burgers
+Chicken Nuggets
+Hot Dogs
+Eggs
+Potato Chips
+Hashbrowns
+Noodles
+Sausages
+Potato Wedges
+Corn Dogs
+Scrambled Eggs
+Popcorn
+Grilled Cheese
+Macaroni and Cheese
+Spaghetti
+Chicken Patties
+Cottage Cheese
+Meat Pie
+Plain bread
+Pierogi
+Pastry
+Lasagna

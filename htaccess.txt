@@ -1,0 +1,282 @@
+AddType text/html; charset=UTF-8 html
+AddType text/plain; charset=UTF-8 txt
+AddDefaultCharset utf-8
+SetEnv REGISTER_GLOBALS 0
+RewriteEngine On
+
+#RewriteRule ^(.*)resultados/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ $1results.php?current_countryname=$2&current_statename=$3&current_country=$4&current_state=$5&current_region=$6&estado_id=$7&cidade_id=$8&bairro_id=$9&keyword=+$10&operation=$11&template_id= [L]
+
+RewriteRule ^(.*)resultados$	results.php [L]
+
+#RewriteRule ^(.*)resultados/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ $1results.php?keyword=$2&current_country=$3&current_state=$4&current_region=$5&estado_id=$6&cidade_id=$7&bairro_id=$8&operation=$9&template_id= [L]
+
+RewriteRule ^(.*)sitemgr/(.*)$ $1sitemgr/$2 [L]
+RewriteRule ^(.*)index.html$ $1index.php [L]
+RewriteRule ^(.*)registro$ $1registro.php [L]
+RewriteRule ^(.*)membros/esqueceu-a-senha$ $1membros/esqueceu-a-senha [L]
+
+RewriteRule ^(.*)contato$ $1contactus.php [L]
+
+# GERENCIAMENTO BEGIN 
+RewriteRule ^(.*)gerenciamento/conta$ $1gerenciamento/manageaccount.php [L]
+
+RewriteRule ^(.*)gerenciamento/usuarios/busca$ $1gerenciamento/account/search.php [L]
+RewriteRule ^(.*)gerenciamento/usuarios/adicionar$ $1gerenciamento/account/account.php [L]
+RewriteRule ^(.*)gerenciamento/usuarios$ $1gerenciamento/account/ [L]
+RewriteRule ^(.*)gerenciamento/usuarios/esqueceu-a-senha/([a-zA-Z0-9-]+)$ $1gerenciamento/account/forgot.php?id=$2 [L]
+RewriteRule ^(.*)gerenciamento/usuarios/apagar/([a-zA-Z0-9-]+)$ $1gerenciamento/account/delete.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/usuarios/editar/([a-zA-Z0-9-]+)$ $1gerenciamento/account/account.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/usuarios/visualizar/([a-zA-Z0-9-]+)$ $1gerenciamento/account/view.php?id=$2	[L]
+
+RewriteRule ^(.*)gerenciamento/administradores/apagar/([a-zA-Z0-9-]+)$ $1gerenciamento/smaccount/delete.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/administradores/editar/([a-zA-Z0-9-]+)$ $1gerenciamento/smaccount/smaccount.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/administradores/visualizar/([a-zA-Z0-9-]+)$ $1gerenciamento/smaccount/view.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/administradores$ $1gerenciamento/smaccount/ [L]
+RewriteRule ^(.*)gerenciamento/administradores/adicionar$ $1gerenciamento/smaccount/smaccount.php [L]
+RewriteRule ^(.*)gerenciamento/administradores/buscar$ $1gerenciamento/smaccount/search.php [L]
+
+RewriteRule ^(.*)gerenciamento/estabelecimentos/apagar/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/delete.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/editar/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/listing.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/visualizar/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/view.php?id=$2	[L]
+
+RewriteRule ^(.*)gerenciamento/estabelecimentos/promocao/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/promotion.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/clientes/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/client.php?item_id=$2 [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/relatorio/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/report.php?id=$2 [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/ajuste-do-mapa/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/maptuning.php?id=$2 [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/tipo/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/listinglevel.php?id=$2 [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/configuracao/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/settings.php?id=$2 [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos$ $1gerenciamento/listing/ [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/tipo$ $1gerenciamento/listing/listinglevel.php [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/buscar$ $1gerenciamento/listing/search.php [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/avaliacoes$ $1gerenciamento/review/index.php?item_type=listing [L]
+
+RewriteRule ^(.*)gerenciamento/estabelecimentos/adicionar$ $1gerenciamento/listing/listinglevel.php [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/adicionar/tipo/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/listing.php?level=$2 [L]
+
+RewriteRule ^(.*)gerenciamento/estabelecimentos/letra/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/index.php?letra=$2 [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/tela/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/index.php?letra=&screen=$2 [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/index.php$ $1gerenciamento/listing/index.php [L]
+
+RewriteRule ^(.*)gerenciamento/estabelecimentos/fotos/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/gallery.php?item_type=listing&item_id=$2 [L]
+RewriteRule ^(.*)gerenciamento/fotos/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/gallery/images.php?id=$2&empresaid=$3	[L]
+RewriteRule ^(.*)gerenciamento/fotos/adicionar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/gallery/image.php?id=$2&empresaid=$3	[L]
+RewriteRule ^(.*)gerenciamento/fotos/adicionar/([a-zA-Z0-9-]+)/$ $1gerenciamento/gallery/image.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/fotos/imagem/apagar/$ $1gerenciamento/gallery/delete_image.php [L]
+RewriteRule ^(.*)gerenciamento/fotos/imagens/$ $1gerenciamento/gallery/images.php [L]
+RewriteRule ^(.*)gerenciamento/fotos/imagem/$ $1gerenciamento/gallery/image.php [L]
+RewriteRule ^(.*)gerenciamento/fotos/imagem/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/gallery/image.php?gallery_image_id=$2&id=$3 [L]
+RewriteRule ^(.*)gerenciamento/fotos/([a-zA-Z0-9-]+)$ $1gerenciamento/gallery/images.php?id=$2 [L]
+RewriteRule ^(.*)gerenciamento/galerias/$ $1gerenciamento/gallery/ [L]
+RewriteRule ^(.*)gerenciamento/fotos/images.php?id=([a-zA-Z0-9-]+)&screen=&letra=$ $1gerenciamento/gallery/images.php?id=$2&screen=&letra= [L]
+
+
+RewriteRule ^(.*)gerenciamento/avaliacoes/([a-zA-Z0-9-]+)$ $1gerenciamento/review/index.php?item_type=listing&item_id=$2 [L]
+RewriteRule ^(.*)gerenciamento/avaliacoes$ $1gerenciamento/review/index.php?item_type=listing [L]
+RewriteRule ^(.*)gerenciamento/avaliacoes/visualizar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/review/view.php?item_id=$2&item_type=listing&id=$3	[L]
+RewriteRule ^(.*)gerenciamento/avaliacoes/editar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/review/edit.php?item_id=$2&item_type=listing&id=$3	[L]
+RewriteRule ^(.*)gerenciamento/avaliacoes/apagar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/review/delete.php?item_id=$2&item_type=listing&id=$3	[L]
+
+RewriteRule ^(.*)gerenciamento/estabelecimentoscategs/adicionar/([a-zA-Z0-9-]+)/$ $1gerenciamento/estabelecimentoscategs/category.php?category_id=$2	[L]
+RewriteRule ^(.*)gerenciamento/estabelecimentoscategs/apagar/([a-zA-Z0-9-]+)/$ $1gerenciamento/estabelecimentoscategs/delete.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/estabelecimentoscategs/apagar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/estabelecimentoscategs/delete.php?id=$2&category_id=$[L]
+RewriteRule ^(.*)gerenciamento/estabelecimentoscategs/editar/([a-zA-Z0-9-]+)$ $1gerenciamento/estabelecimentoscategs/category.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/estabelecimentoscategs/visualizar/([a-zA-Z0-9-]+)$ $1gerenciamento/estabelecimentoscategs/index.php?category_id=$2	[L]
+
+RewriteRule ^(.*)gerenciamento/banner/adicionar$ $1gerenciamento/banner/add.php [L]
+RewriteRule ^(.*)gerenciamento/banner/buscar$ $1gerenciamento/banner/search.php [L]
+RewriteRule ^(.*)gerenciamento/banner/apagar/([a-zA-Z0-9-]+)$ $1gerenciamento/banner/delete.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/banner/editar/([a-zA-Z0-9-]+)$ $1gerenciamento/banner/edit.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/banner/visualizar/([a-zA-Z0-9-]+)$ $1gerenciamento/banner/view.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/banner/relatorio/([a-zA-Z0-9-]+)$ $1gerenciamento/banner/report.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/banner/configuracao/([a-zA-Z0-9-]+)$ $1gerenciamento/banner/settings.php?id=$2	[L]
+
+RewriteRule ^(.*)gerenciamento/clientes/adicionar$ $1gerenciamento/client/client.php [L]
+RewriteRule ^(.*)gerenciamento/clientes/buscar$ $1gerenciamento/client/search.php [L]
+RewriteRule ^(.*)gerenciamento/estabelecimentos/clientes/([a-zA-Z0-9-]+)$ $1gerenciamento/listing/client.php?item_type=listing&item_id=$2 [L]
+RewriteRule ^(.*)gerenciamento/clientes/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/client/images.php?id=$2&empresaid=$3 [L]
+RewriteRule ^(.*)gerenciamento/clientes/adicionar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/client/image.php?id=$2&screen=&empresaid=$3 [L]
+RewriteRule ^(.*)gerenciamento/clientes/adicionar/([a-zA-Z0-9-]+)/$ $1gerenciamento/client/image.php?id=$2 [L]
+RewriteRule ^(.*)gerenciamento/clientes/imagem/apagar/$ $1gerenciamento/client/delete_image.php [L]
+RewriteRule ^(.*)gerenciamento/clientes/imagem/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1gerenciamento/client/image.php?client_image_id=$2&id=$3 [L]
+RewriteRule ^(.*)gerenciamento/clientes/([a-zA-Z0-9-]+)$ $1gerenciamento/client/images.php?id=$2 [L]
+RewriteRule ^(.*)gerenciamento/clientes/buscar$ $1gerenciamento/client/search.php [L]
+RewriteRule ^(.*)gerenciamento/clientes/imagens/$ $1gerenciamento/client/images.php [L]
+
+
+
+
+RewriteRule ^(.*)gerenciamento/exportar/pagamentos$ $1gerenciamento/export/payment.php?type=online [L]
+
+RewriteRule ^(.*)gerenciamento/categorias$ $1gerenciamento/listingcategs/ [L]
+RewriteRule ^(.*)gerenciamento/categorias/adicionar $1gerenciamento/listingcategs/category.php?category_id=&screen=&letra= [L]
+
+RewriteRule ^(.*)gerenciamento/localidades/estados$ $1gerenciamento/locations/countries.php [L]
+RewriteRule ^(.*)gerenciamento/localidades/cidades$ $1gerenciamento/locations/states.php [L]
+RewriteRule ^(.*)gerenciamento/localidades/bairros$ $1gerenciamento/locations/regions.php [L]
+
+RewriteRule ^(.*)gerenciamento/transacoes$ $1gerenciamento/transactions/index.php [L]
+RewriteRule ^(.*)gerenciamento/transacoes/buscar$ $1gerenciamento/transactions/search.php [L]
+RewriteRule ^(.*)gerenciamento/transacoes/visualizar/([a-zA-Z0-9-]+)$ $1gerenciamento/transactions/view.php?id=$2	[L]
+
+RewriteRule ^(.*)gerenciamento/historico-de-faturas$ $1gerenciamento/invoices/index.php [L]
+RewriteRule ^(.*)gerenciamento/historico-de-faturas/buscar$ $1gerenciamento/invoices/search.php [L]
+RewriteRule ^(.*)gerenciamento/historico-de-faturas/visualizar/([a-zA-Z0-9-]+)$ $1gerenciamento/invoices/view.php?id=$2	[L]
+
+RewriteRule ^(.*)gerenciamento/relatorios$ $1gerenciamento/reports/statisticreport.php [L]
+
+RewriteRule ^(.*)gerenciamento/exportar-dados$ $1gerenciamento/export/ [L]
+RewriteRule ^(.*)gerenciamento/exportar/registros-de-pagamentos$ $1gerenciamento/export/payment.php [L]
+
+
+RewriteRule ^(.*)gerenciamento/promocao/apagar/([a-zA-Z0-9-]+)$ $1gerenciamento/promotion/delete.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/promocao/editar/([a-zA-Z0-9-]+)$ $1gerenciamento/promotion/promotion.php?id=$2	[L]
+RewriteRule ^(.*)gerenciamento/promocao/visualizar/([a-zA-Z0-9-]+)$ $1gerenciamento/promotion/view.php?id=$2	[L]
+
+# GERENCIAMENTO END 
+
+# MEMBROS BEGIN 
+RewriteRule ^(.*)membros/minha-conta/([a-zA-Z0-9-]+)$ $1membros/account/account.php?id=$2 [L]
+
+RewriteRule ^(.*)membros/estabelecimentos/apagar/([a-zA-Z0-9-]+)$ $1membros/listing/delete.php?id=$2	[L]
+RewriteRule ^(.*)membros/estabelecimentos/editar/([a-zA-Z0-9-]+)$ $1membros/listing/listing.php?id=$2	[L]
+RewriteRule ^(.*)membros/estabelecimentos/visualizar/([a-zA-Z0-9-]+)$ $1membros/listing/view.php?id=$2	[L]
+
+RewriteRule ^(.*)membros/estabelecimentos/galeria/([a-zA-Z0-9-]+)$ $1membros/listing/gallery.php?item_type=listing&item_id=$2	[L]
+
+RewriteRule ^(.*)membros/estabelecimentos/fotos/([a-zA-Z0-9-]+)$ $1membros/listing/gallery.php?item_type=listing&item_id=$2 [L]
+
+RewriteRule ^(.*)membros/estabelecimentos/promocao/([a-zA-Z0-9-]+)$ $1membros/listing/promotion.php?id=$2	[L]
+RewriteRule ^(.*)membros/promocao/adicionar/([a-zA-Z0-9-]+)$ $1membros/promotion/promotion.php?listing_id=$2	[L]
+RewriteRule ^(.*)membros/promocao/$ $1membros/promotion/ [L]
+
+RewriteRule ^(.*)membros/estabelecimentos/relatorio/([a-zA-Z0-9-]+)$ $1membros/listing/report.php?id=$2 [L]
+RewriteRule ^(.*)membros/estabelecimentos/ajuste-do-mapa/([a-zA-Z0-9-]+)$ $1membros/listing/maptuning.php?id=$2 [L]
+RewriteRule ^(.*)membros/estabelecimentos/tipo/([a-zA-Z0-9-]+)$ $1membros/listing/listinglevel.php?id=$2 [L]
+RewriteRule ^(.*)membros/estabelecimentos/configuracao/([a-zA-Z0-9-]+)$ $1membros/listing/settings.php?id=$2 [L]
+RewriteRule ^(.*)membros/estabelecimentos/$ $1membros/listing/ [L]
+RewriteRule ^(.*)membros/estabelecimentos/tipo$ $1membros/listing/listinglevel.php [L]
+RewriteRule ^(.*)membros/estabelecimentos/buscar$ $1membros/listing/search.php [L]
+RewriteRule ^(.*)membros/estabelecimentos/avaliacoes$ $1membros/review/index.php?item_type=listing [L]
+RewriteRule ^(.*)membros/estabelecimentos/adicionar$ $1membros/listing/listinglevel.php [L]
+RewriteRule ^(.*)membros/estabelecimentos/letra/([a-zA-Z0-9-]+)$ $1membros/listing/index.php?letra=$2 [L]
+RewriteRule ^(.*)membros/estabelecimentos/tela/([a-zA-Z0-9-]+)$ $1membros/listing/index.php?letra=&screen=$2 [L]
+
+RewriteRule ^(.*)membros/estabelecimentos/clientes/([a-zA-Z0-9-]+)$ $1membros/listing/client.php?item_type=listing&item_id=$2 [L]
+RewriteRule ^(.*)membros/clientes/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/client/images.php?id=$2&empresaid=$3 [L]
+RewriteRule ^(.*)membros/clientes/adicionar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/client/image.php?id=$2&screen=&empresaid=$3 [L]
+RewriteRule ^(.*)membros/clientes/adicionar/([a-zA-Z0-9-]+)/$ $1membros/client/image.php?id=$2 [L]
+RewriteRule ^(.*)membros/clientes/imagem/apagar/$ $1membros/client/delete_image.php [L]
+RewriteRule ^(.*)membros/clientes/imagem/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/client/image.php?client_image_id=$2&id=$3 [L]
+RewriteRule ^(.*)membros/clientes/([a-zA-Z0-9-]+)$ $1membros/client/images.php?id=$2 [L]
+RewriteRule ^(.*)membros/clientes/buscar$ $1membros/client/search.php [L]
+RewriteRule ^(.*)membros/clientes/imagens/$ $1membros/client/images.php [L]
+
+RewriteRule ^(.*)membros/fotos/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/gallery/images.php?id=$2&empresaid=$3	[L]
+RewriteRule ^(.*)membros/fotos/adicionar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/gallery/image.php?id=$2&empresaid=$3	[L]
+RewriteRule ^(.*)membros/fotos/adicionar/([a-zA-Z0-9-]+)/$ $1membros/gallery/image.php?id=$2	[L]
+RewriteRule ^(.*)membros/fotos/imagem/apagar/$ $1membros/gallery/delete_image.php [L]
+RewriteRule ^(.*)membros/fotos/imagens/$ $1membros/gallery/images.php [L]
+RewriteRule ^(.*)membros/fotos/imagem/$ $1membros/gallery/image.php [L]
+RewriteRule ^(.*)membros/fotos/imagem/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/gallery/image.php?gallery_image_id=$2&id=$3 [L]
+RewriteRule ^(.*)membros/fotos/([a-zA-Z0-9-]+)$ $1membros/gallery/images.php?id=$2 [L]
+RewriteRule ^(.*)membros/galerias/$ $1membros/gallery/ [L]
+RewriteRule ^(.*)membros/fotos/images.php?id=([a-zA-Z0-9-]+)&screen=&letra=$ $1membros/gallery/images.php?id=$2&screen=&letra= [L]
+
+RewriteRule ^(.*)membros/avaliacoes/([a-zA-Z0-9-]+)$ $1membros/review/index.php?item_type=listing&item_id=$2 [L]
+RewriteRule ^(.*)membros/avaliacoes$ $1membros/review/index.php?item_type=listing [L]
+RewriteRule ^(.*)membros/avaliacoes/visualizar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/review/view.php?item_id=$2&item_type=listing&id=$3	[L]
+RewriteRule ^(.*)membros/avaliacoes/editar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/review/edit.php?item_id=$2&item_type=listing&id=$3	[L]
+RewriteRule ^(.*)membros/avaliacoes/apagar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/review/delete.php?item_id=$2&item_type=listing&id=$3	[L]
+
+RewriteRule ^(.*)membros/estabelecimentoscategs/adicionar/([a-zA-Z0-9-]+)/$ $1membros/estabelecimentoscategs/category.php?category_id=$2	[L]
+RewriteRule ^(.*)membros/estabelecimentoscategs/apagar/([a-zA-Z0-9-]+)/$ $1membros/estabelecimentoscategs/delete.php?id=$2	[L]
+RewriteRule ^(.*)membros/estabelecimentoscategs/apagar/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ $1membros/estabelecimentoscategs/delete.php?id=$2&category_id=$3	[L]
+RewriteRule ^(.*)membros/estabelecimentoscategs/editar/([a-zA-Z0-9-]+)$ $1membros/estabelecimentoscategs/category.php?id=$2	[L]
+RewriteRule ^(.*)membros/estabelecimentoscategs/visualizar/([a-zA-Z0-9-]+)$ $1membros/estabelecimentoscategs/index.php?category_id=$2	[L]
+
+RewriteRule ^(.*)membros/banner/adicionar$ $1membros/banner/add.php [L]
+RewriteRule ^(.*)membros/banner/buscar$ $1membros/banner/search.php [L]
+RewriteRule ^(.*)membros/banner/apagar/([a-zA-Z0-9-]+)$ $1membros/banner/delete.php?id=$2	[L]
+RewriteRule ^(.*)membros/banner/editar/([a-zA-Z0-9-]+)$ $1membros/banner/edit.php?id=$2	[L]
+RewriteRule ^(.*)membros/banner/visualizar/([a-zA-Z0-9-]+)$ $1membros/banner/view.php?id=$2	[L]
+RewriteRule ^(.*)membros/banner/relatorio/([a-zA-Z0-9-]+)$ $1membros/banner/report.php?id=$2	[L]
+RewriteRule ^(.*)membros/banner/configuracao/([a-zA-Z0-9-]+)$ $1membros/banner/settings.php?id=$2	[L]
+
+RewriteRule ^(.*)membros/pagamento/$ $1membros/billing/index.php [L]
+RewriteRule ^(.*)membros/pagamento/pagar$ $1membros/billing/pay.php [L]
+
+RewriteRule ^(.*)membros/exportar/pagamentos$ $1membros/export/payment.php?type=online [L]
+
+RewriteRule ^(.*)membros/transacoes/$ $1membros/transactions/index.php [L]
+RewriteRule ^(.*)membros/transacoes/buscar$ $1membros/transactions/search.php [L]
+RewriteRule ^(.*)membros/transacoes/visualizar/([a-zA-Z0-9-]+)$ $1membros/transactions/view.php?id=$2	[L]
+
+RewriteRule ^(.*)membros/historico-de-faturas/$ $1membros/invoices/index.php [L]
+RewriteRule ^(.*)membros/historico-de-faturas/buscar$ $1membros/invoices/search.php [L]
+RewriteRule ^(.*)membros/historico-de-faturas/visualizar/([a-zA-Z0-9-]+)$ $1membros/invoices/view.php?id=$2	[L]
+RewriteRule ^(.*)membros/relatorios$ $1membros/reports/statisticreport.php [L]
+
+RewriteRule ^(.*)membros/promocao/apagar/([a-zA-Z0-9-]+)$ $1membros/promotion/delete.php?id=$2	[L]
+RewriteRule ^(.*)membros/promocao/editar/([a-zA-Z0-9-]+)$ $1membros/promotion/promotion.php?id=$2	[L]
+RewriteRule ^(.*)membros/promocao/visualizar/([a-zA-Z0-9-]+)$ $1membros/promotion/view.php?id=$2	[L]
+
+RewriteRule ^(.*)membros/fotos/apagar/([a-zA-Z0-9-]+)$ $1membros/gallery/delete.php?id=$2	[L]
+RewriteRule ^(.*)membros/fotos/editar/([a-zA-Z0-9-]+)$ $1membros/gallery/gallery.php?id=$2	[L]
+RewriteRule ^(.*)membros/fotos/visualizar/([a-zA-Z0-9-]+)$ $1membros/gallery/view.php?id=$2	[L]
+RewriteRule ^(.*)membros/fotos/imagens/([a-zA-Z0-9-]+)$ $1membros/gallery/images.php?id=$2	[L]
+
+# MEMBROS END
+
+
+# Sitemap
+RewriteRule ^sitemap.xml$ custom/sitemap/index.xml [L]
+RewriteRule ^sitemapnews.xml$ custom/sitemap/indexnews.xml [L]
+
+# Listings
+RewriteRule ^([a-zA-Z0-9-]+).(html|htm)$ listing/detail.php?listing=$1 [L]
+RewriteRule ^listing/([a-zA-Z0-9-]+).(html|htm)#([a-zA-Z0-9-]+)$ listing/detail.php?listing=$1#$2 [L]
+RewriteRule ^listing/type/([a-zA-Z0-9-]+)$ listing/results.php?template=$1 [L]
+RewriteRule ^listing/guide/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ listing/results.php?category1=$1&category2=$2&category3=$3&category4=$4&category5=$5 [L]
+RewriteRule ^listing/location/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ listing/results.php?country=$1&state=$2&region=$3 [L]
+RewriteRule ^listing/reviews/([a-zA-Z0-9-]+)$ listing/comments.php?listing=$1 [L]
+
+# Promotion
+RewriteRule ^promotion/guide/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ promotion/results.php?category1=$1&category2=$2&category3=$3&category4=$4&category5=$5 [L]
+RewriteRule ^promotion/location/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ promotion/results.php?country=$1&state=$2&region=$3 [L]
+
+# Articles
+RewriteRule ^article/([a-zA-Z0-9-]+).(html|htm)$ article/detail.php?article=$1 [L]
+RewriteRule ^article/guide/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?$ article/results.php?category1=$1&category2=$2 [L]
+RewriteRule ^article/reviews/([a-zA-Z0-9-]+)$ article/comments.php?article=$1 [L]
+
+# Content
+RewriteRule ^content/([a-zA-Z0-9-]+).(html|htm)$ content/index.php?content=$1 [L]
+
+# WITHOUT SUBFOLDER (END)
+
+# WITH SUBFOLDER (BEGIN)
+
+# Sitemap
+RewriteRule ^([a-zA-Z0-9_-]+)/sitemap.xml$ $1/custom/sitemap/index.xml [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/sitemapnews.xml$ $1/custom/sitemap/indexnews.xml [L]
+
+# Listings
+RewriteRule ^([a-zA-Z0-9_-]+)/listing/([a-zA-Z0-9-]+).(html|htm)$ $1/listing/detail.php?listing=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/listing/([a-zA-Z0-9-]+).(html|htm)#([a-zA-Z0-9-]+)$ $1/listing/detail.php?listing=$2#$3 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/listing/type/([a-zA-Z0-9-]+)$ $1/listing/results.php?template=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/listing/guide/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ $1/listing/results.php?category1=$2&category2=$3&category3=$4&category4=$5&category5=$6 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/listing/location/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ $1/listing/results.php?country=$2&state=$3&region=$4 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/listing/reviews/([a-zA-Z0-9-]+)$ $1/listing/comments.php?listing=$2 [L]
+
+# Promotion
+RewriteRule ^([a-zA-Z0-9_-]+)/promotion/guide/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ $1/promotion/results.php?category1=$2&category2=$3&category3=$4&category4=$5&category5=$6 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/promotion/location/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?/?([a-zA-Z0-9-]+)?$ $1/promotion/results.php?country=$2&state=$3&region=$4 [L]
+
+# Articles
+RewriteRule ^([a-zA-Z0-9_-]+)/article/([a-zA-Z0-9-]+).(html|htm)$ $1/article/detail.php?article=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/article/guide/([a-zA-Z0-9-]+)/?([a-zA-Z0-9-]+)?$ $1/article/results.php?category1=$2&category2=$3 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/article/reviews/([a-zA-Z0-9-]+)$ $1/article/comments.php?article=$2 [L]
+
+# Content
+RewriteRule ^([a-zA-Z0-9_-]+)/content/([a-zA-Z0-9-]+).(html|htm)$ $1/content/index.php?content=$2 [L]
+

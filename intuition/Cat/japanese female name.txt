@@ -1,0 +1,12 @@
+1
+1,2,5,6,8,10,12,14,15,16,19,21,22,24,25,26,27,28,29
+Hina    
+Yui     
+Miyu    
+Haruka  
+Sakura  
+Nanami  
+Ayaka   
+Honoka  
+Momoka  
+Aoi     

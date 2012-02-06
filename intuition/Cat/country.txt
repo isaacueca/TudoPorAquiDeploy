@@ -1,0 +1,54 @@
+3
+1,3,4,5,6,10,12,13,14,16,17,19,21,22,25,26,27,29
+United States
+China
+Japan
+Germany
+France
+United Kingdom
+Brazil
+Italy
+Canada
+India
+Russia
+Spain
+Australia
+Mexico
+South Korea
+Netherlands
+Turkey
+Indonesia
+Switzerland
+Poland
+Belgium
+Sweden
+Saudi Arabia
+Taiwan
+Norway
+Austria
+Argentina
+South Africa
+Iran
+Thailand
+Denmark
+Greece
+United Arab Emirates
+Venezuela
+Colombia
+Finland
+Malaysia
+Portugal
+Hong Kong
+Singapore
+Egypt
+Nigeria
+Israel
+Ireland
+Chile
+Czech Republic
+Philippines
+Pakistan
+Romania
+Algeria
+Peru
+New Zealand

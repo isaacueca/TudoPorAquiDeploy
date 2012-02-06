@@ -1,0 +1,12 @@
+2
+2,4,5,16,22,26,29
+Pollens
+Animal hair
+Dust mites
+Insect bites
+Mold
+Food
+Latex
+Medicine
+Perfume
+Cockroachess

@@ -1,0 +1,30 @@
+2
+1,4,5,10,16,19,22,25,26,27,28,29
+Harvard University
+University of Oxford
+University of Cambridge
+Stanford University
+Massachusetts Institute of Technology
+University of California, Berkeley
+California Institute of Technology
+Princeton University
+Yale University
+University of Chicago
+Columbia University
+University of California, San Diego
+Cornell University
+University of California, Los Angeles
+University Pennsylvania
+University of Wisconsin, Madison
+University of Washington, Seattle
+Tokyo University
+University of California, San Francisco
+University of Michigan, Ann Arbor
+Kyoto University
+Imperial College London
+Johns Hopkins University
+University of Toronto
+University College London
+University of Illinois, Urbana-Champaign
+Swiss Federal Institute of Technology, Zurich
+Washington University, St. Louis

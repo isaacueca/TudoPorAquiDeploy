@@ -1,0 +1,15 @@
+2
+1,2,3,4,5,6,10,16,22,26,29
+Scorpio
+Virgo
+Gemini
+Pisces
+Libra
+Cancer
+Taurus
+Capricorn
+Aries
+Sagittarius
+Leo 
+Aquarius
+

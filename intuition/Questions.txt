@@ -1,0 +1,33 @@
+1  1 What is your favorite XXX?
+2  1 What is the most common XXX?
+3  1 What XXX do you prefer?
+4  2 Pick a XXX you hate?
+5  2 Choose the worst XXX?
+6  1 What XXX do you like best?
+7  1 What is the best XXX?
+8  1 What is the funniest XXX?
+9  1 Pick the most important XXX?
+10 1 What is the most popular XXX?
+11 1 What is the healthiest XXX?
+12 1 Pick the most beautiful XXX?
+13 1 What is the most adorable XXX?
+14 2 Pick the ugliest XXX?
+15 1 Pick a elegant XXX?
+16 1 What is the most perfect XXX?
+17 1 What is the cleanest XXX?
+18 1 What is the most famous XXX?
+19 1 Pick a powerfull XXX:
+20 1 Pick a clever XXX:
+21 1 Choose a nice XXX:
+22 1 What XXX would make you happy?
+23 1 What is the scariest XXX?
+24 2 Pick the oddest XXX:
+25 1 Choose a good XXX:
+26 2 Pick a terrible XXX:
+27 2 Select a bad XXX:
+28 1 Pick a strong XXX:
+29 1 What is the most difficult XXX?
+30 1 What is the smartest XXX?
+31 1 What is the most reliable XXX?
+32 1 Select the coolest XXX?
+33 1 What is the cutest XXX?	

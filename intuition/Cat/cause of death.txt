@@ -1,0 +1,17 @@
+2
+2,5,10,26
+Diseases of the heart             
+Malignant tumors                  
+Cerebrovascular diseases          
+Respiratory diseases              
+Accidents (unintentional injuries)
+Diabetes mellitus                 
+Influenza                         
+Pneumonia                         
+Alzheimer's disease               
+Nephritis                         
+Septicemia (blood poisoning)      
+Suicide                           
+Cirrhosis                         
+Parkinson's disease               
+Homicide                          

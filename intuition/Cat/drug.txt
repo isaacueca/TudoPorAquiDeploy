@@ -1,0 +1,12 @@
+3
+2,5,11,16,19,22,28,29
+Marijuana
+Cocaine
+Xanax
+Adderall
+Ecstasy
+Heroin
+LSD
+PCP
+Magic Mushrooms
+Alcohol

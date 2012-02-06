@@ -1,0 +1,20 @@
+4
+2,10,16,22,26,29
+Fear of Heights
+Fear of Flying
+Fear of Public Speaking
+Fear of the Dark
+Fear of Spiders
+Fear of Snakes
+Fear of Rejection
+Fear of Small Confined Spaces
+Fear of Failure
+Fear of Intimacy
+Fear of Hospitals
+Fear of Elevators
+Fear of Dogs
+Fear of Driving
+Fear of Success
+Fear of Being Alone
+Fear of Needles
+Fear of Aging

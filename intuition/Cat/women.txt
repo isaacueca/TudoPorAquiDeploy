@@ -1,0 +1,52 @@
+5
+1,3,4,6,10,12,13,14,15,16,18,22,25,26,27,29
+Lady Gaga                    
+Kesha                        
+Madonna                      
+Beyonce                      
+Rihanna                      
+Britney Spears               
+Justin Bieber                
+Miley Cyrus                  
+Paris Hilton                 
+Avril Lavigne               
+Shakira                     
+Taylor Swift                
+Angelina Jolie              
+Oprah Winfrey               
+Megan Fox                   
+Jennifer Lopez              
+Mariah Carey                
+Sarah Palin                 
+Jessica Simpson             
+Lindsay Lohan               
+Michelle Obama              
+Katy Perry                   
+Kim Kardashian              
+Sandra Bullock              
+Christina Aguilera          
+Jessica Alba                
+Fergie                      
+Pamela Anderson             
+Betty White                 
+Kristen Stewart             
+Ciara                       
+Hillary Clinton             
+Jennifer Aniston            
+Demi Moore                  
+Heidi Montag                
+Marilyn Monroe              
+Hilary Duff                 
+Ashley Tisdale              
+Katy Price                  
+Vanessa Hudgens             
+Amy Winehouse               
+Carrie Underwood            
+Kelly Clarkson              
+Sarah Jessica Parker        
+Lily Allen                  
+Adriana Lima                 
+Tina Fey                     
+Carmen Electra               
+Scarlett Johansson          
+Eva Longoria                 

@@ -1,0 +1,12 @@
+3
+1,2,3,4,5,6,10,11,25,26,27
+Chardonnay
+Cabernet Sauvignon
+Merlot
+Pinot Noir
+Sauvignon Blanc
+Riesling
+Syrah/Shiraz
+Viognier
+Semillon
+Malbec

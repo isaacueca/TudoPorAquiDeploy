@@ -1,0 +1,21 @@
+1
+2,5,16,22,26,29
+Angelman syndrome
+Canavan disease
+Coeliac disease
+Charcot-Marie-Tooth disease
+Color blindness
+Cri du chat
+Cystic fibrosis
+Down syndrome
+Duchenne muscular dystrophy
+Haemochromatosis
+Haemophilia
+Klinefelter's syndrome
+Neurofibromatosis
+Phenylketonuria
+Polycystic kidney disease
+Prader-Willi syndrome
+Sickle-cell disease
+Tay-Sachs disease
+Turner syndrome

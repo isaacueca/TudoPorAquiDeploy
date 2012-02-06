@@ -1,0 +1,32 @@
+1
+1,2,3,4,5,6,10,16,21,22,26,27,29,32
+Helvetica 		
+Lucida   		
+Tahoma	 		
+Microsoft Sans Serif 	
+Arial 			
+Courier New 		
+Times New Roman 	
+Verdana 		
+Geneva 			
+Monaco			
+Trebuchet   		
+Courier 		
+Georgia 		
+Comic Sans 		
+Palatino Linotype 	
+Impact 			
+Franklin Gothic  	
+Times 			
+Chancery   		
+Gothic   		
+Century  	
+Bookman   		
+Arial 			
+Verdana 			
+Palladio   		
+Nimbus					
+Sylfaen 		
+Georgia 		
+Mangal		 	
+Tunga                   

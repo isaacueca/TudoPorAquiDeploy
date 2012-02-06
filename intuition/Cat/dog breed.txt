@@ -1,0 +1,52 @@
+2
+1,2,3,4,5,6,10,14,16,22,25,26,27,29
+Airedale Terrier 
+Akita (American)
+Alaskan Malamute
+American Cocker Spaniel
+Australian Shepherd
+Basset Hound
+Beagle
+Bichon Frise
+Boston Terrier
+Boxer
+Brittany Spaniel
+Bulldog
+Cairn Terrier
+Chesapeake Bay Retriever
+Chihuahua
+Chinese Shar-Pei
+Chow Chow
+Collie
+Dachshund
+Dalmatian
+Doberman Pinscher
+English Springer Spaniel
+German Shepherd Dog
+German Shorthaired Pointer 
+Golden Retriever
+Great Dane
+Great Pyrenees
+Labrador Retriever
+Lhasa Apso
+Maltese
+Mastiff
+Miniature Pinscher
+Miniature Schnauzer
+Newfoundland
+Pekingese
+Pembroke Welsh Corgi
+Pomeranian
+Poodle
+Pug
+Rottweiler
+Saint Bernard
+Samoyed
+Schipperke
+Scottish Terrier (Scottie)
+Shetland Sheepdog (Sheltie)
+Shih-Tzu
+Siberian Husky
+Weimaraner
+West Highland White Terrier
+Yorkshire Terrier

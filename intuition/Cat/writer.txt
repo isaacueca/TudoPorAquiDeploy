@@ -1,0 +1,20 @@
+2
+1,2,3,4,5,6,9,10,14,16,18,20,22,25,26,27,29,30
+William Shakespeare 		
+Agatha Christie 		
+Barbara Cartland 		
+Harold Robbins 			
+Georges Simenon 		
+Sidney Sheldon 			
+Enid Blyton 			
+Danielle Steel 			
+Gilbert Patten 			
+Leo Tolstoy 			
+Jackie Collins 			
+Horatio Alger, Jr. 		
+Corín Tellado 			
+Dean Koontz 			
+Aleksandr Sergeyevich		
+Stephen King 			
+Louis L'Amour 			
+Erle Stanley Gardner 		
